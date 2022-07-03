@@ -1,0 +1,263 @@
+body{
+    margin: 0px 0px;
+    margin-bottom: 0px;
+    padding :0px 0px;
+    background-color: #f0f1f3;
+    color: #183153;
+    font-family: 'Nunito', sans-serif;
+}
+nav{
+    background-color: #146ebe;
+    color: white;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr ;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+nav h3{
+    margin: auto 20px;
+}
+nav div{
+    color: #ffd43b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: left;
+    justify-content: left;
+}
+nav div i{
+    margin-left: 30px;
+}
+nav ul{
+    margin:auto 10px;
+    padding: 0px 0px;
+    display: flex;
+    list-style-type: none;
+    height: 60px;
+    justify-content: end;
+}
+nav ul li{
+    margin : auto 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.home{
+    display: flex;
+    align-items: center;
+    margin-top: 50px ;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.home img{
+    max-width: 20vw;
+}
+.SKILLS{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-areas: 
+    'a a b b'
+    'c d d f'
+    'e e e f';
+    grid-gap: 5px;
+    grid-template-columns: 1fr 0.75fr 0.2fr 0.9fr;
+    grid-template-rows: 1fr 0.7fr 0.7fr;
+    margin-bottom: 70px;
+}
+.skill.a{
+    grid-area: a;
+}
+.skill.b{
+    grid-area: b;
+}
+.skill.c{
+    grid-area: c;
+}
+.skill.d{
+    grid-area: d;
+}
+.skill.e{
+    grid-area: e;
+}
+.skill.f{
+    grid-area: f;
+}
+.skill{
+    margin: 5px 5px;
+    border:2px solid white;
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas:
+    'img'
+    'h'
+    'p';
+}
+.skill h3{
+    justify-self: center;
+    grid-area: h;
+}
+.skill p{
+    justify-self: center;
+    grid-area: p;
+}
+.PROJECTS{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.project{
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 2%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project input{
+    margin :10px auto;
+    background-color: #ffd43b;
+    border:none;
+    border-radius: 10%;
+    color:white;
+    font-family: 'Nunito', sans-serif;
+}
+.project input:hover{
+    color: #183153;
+}
+.project input:active{
+    color: #ffd43b;
+    background-color: #183153;
+}
+h1{
+    text-align: center;
+    margin: 30px auto;
+}
+i{
+    font-size: 300%;
+    text-align: center;
+    margin: 15px auto;
+}
+p{
+    margin :10px 10px;
+    padding: auto 15px;
+}
+h3{
+    margin: 0px auto;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul li a:hover{
+    color: #183153;
+    background-color: #ffd43b;
+    border: 5px solid #ffd43b;
+    border-radius: 7%;
+}
+.project p:hover{
+color: #ffd43b;
+}
+form input{
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 20vw;
+}
+.form.submit{
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  background-color: #ffd43b;
+  color: white;
+}
+.form.submit:hover{
+    background-color: #183153;
+    color: #ffd43b;
+}
+textarea{
+    border: 2px solid white;
+    border-radius: 5%;
+    width: 30vw;
+    height: 30vh;
+}
+form input:hover{
+    border:2px solid black;
+}
+.Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Contact div{
+    z-index: 0;
+    position: relative;
+}
+.Contact img{
+    max-width: 90vw;
+    opacity: 0.4;
+    border: 2px solid #183153;
+    margin-bottom: 80px;
+}
+.Contact div form{
+    position: absolute;
+    top: 10vh;
+    left: 22vw;
+}
+footer{
+    height: 20vh;
+    background-color: #146ebe;
+    margin: 0px 0px;
+}
+@media screen and (max-width :540px) {
+    .home h1{
+        font-size: 20px;
+    }
+    .home{
+        display: block;
+    }
+    .home img{
+        max-width: 200px;
+        margin: 10px 10%;
+    }
+    footer{
+        max-height: 80px;
+        }
+        nav{
+            font-size: 13px;
+        }
+}
+@media  screen and (max-width:470px) {
+    .PROJECTS{
+        flex-wrap: wrap;
+    }
+    .SKILLS{
+        display: block;
+    }
+    .skill{
+        margin: 20px auto;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media  screen and (max-width:800px) {
+    .Contact textarea{
+        height: 20px;
+    }
+}
+@media  screen and (max-width:540px) {
+    footer{
+        height: 80px;
+    }
+}
